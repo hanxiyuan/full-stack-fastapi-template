@@ -80,12 +80,12 @@ export function User({ user }: { user: any }) {
             </DropdownMenuLabel>
             <DropdownMenuSeparator />
             <RouterLink to="/settings" onClick={handleMenuClick}>
-              <DropdownMenuItem>
+              <DropdownMenuItem className="cursor-pointer">
                 <Settings />
                 User Settings
               </DropdownMenuItem>
             </RouterLink>
-            <DropdownMenuItem onClick={handleLogout}>
+            <DropdownMenuItem onClick={handleLogout} className="cursor-pointer">
               <LogOut />
               Log Out
             </DropdownMenuItem>
